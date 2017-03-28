@@ -1,0 +1,14 @@
+/*
+Theme Name:     Twenty Seventeen
+Template:       
+
+Right to Left text support.
+*/
+@import url("../twentyseventeen/rtl.css");
+
+/* Customizer styles */
+
+.sed-app-editor.twentyseventeen-front-page .twentyseventeen-panel .twentyseventeen-panel-title {
+    left: 3.2em;
+    right: auto;
+}

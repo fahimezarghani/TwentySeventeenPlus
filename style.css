@@ -1,0 +1,81 @@
+/*
+Theme Name:    Twenty Seventeen Plus
+Theme URI:     http://www.siteeditor.org/twenty-seventeen-plus
+Description:   Twenty Seventeen Plus is the powerful child theme for Twenty Seventeen, this theme is full sync with site editor plugin & you can edit this theme in front end editor completely.
+Author:        Site Editor Team
+Author URI:    http://www.siteeditor.org/
+Template:      twentyseventeen
+Version:       1.0.0
+License:       GPLv3
+License URI:   https://www.gnu.org/licenses/gpl-3.0.html
+Tags:          agency, business, clean, corporate, creative, dms, modern, multi-purpose, one page, portfolio, professional, responsive, retina, woocommerce, wordpress
+Text Domain:   twentyseventeen
+*/
+
+
+/** Site Editor Front end **/
+.hide{
+    display: none;
+}
+
+.highlight-front-sections.sed-app-editor.twentyseventeen-front-page .twentyseventeen-panel:after {
+    border: 2px dashed #0085ba; /* Matches visible edit shortcuts. */
+    bottom: 1em;
+    content: "";
+    display: block;
+    left: 1em;
+    position: absolute;
+    right: 1em;
+    top: 1em;
+    z-index: 1;
+}
+
+.highlight-front-sections.sed-app-editor.twentyseventeen-front-page .twentyseventeen-panel .panel-content {
+    z-index: 2; /* Prevent :after from preventing interactions within the section */
+}
+
+/* Used for placeholder text */
+.sed-app-editor.twentyseventeen-front-page .twentyseventeen-panel .twentyseventeen-panel-title {
+    display: block;
+    font-size: 14px;
+    font-size: 0.875rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 3em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* Show borders on the custom page panels only when the front page sections are being edited */
+.highlight-front-sections.sed-app-editor.twentyseventeen-front-page .twentyseventeen-panel:nth-of-type(1):after {
+    border: none;
+}
+
+.twentyseventeen-front-page.sed-app-editor #primary article.panel-placeholder {
+    border: 0;
+}
+
+/** Footer **/
+.site-footer .footer-widget-area-3 .widget-column {
+    float: left;
+    width: 30%;
+}
+
+.site-footer .footer-widget-area-3 .footer-widget-spacing{
+    float: left;
+    width: 4.9%;
+}
+
+.site-footer .footer-widget-area-4 .widget-column {
+    float: left;
+    width: 22%;
+}
+
+.site-footer .footer-widget-area-4 .footer-widget-spacing{
+    float: left;
+    width: 3.9%;
+}
+
+.site-footer .widget-column-spacing.footer-widget-spacing span{
+    visibility: hidden;
+}
