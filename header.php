@@ -28,9 +28,9 @@
 
 	<?php
 
-	$disable_header = (bool)get_theme_mod( 'sed_disable_header' ); 
+	$disable_header = (bool)get_theme_mod( 'sed_disable_header' );
 
-	if( !$disable_header ) {
+	if( $disable_header === false || site_editor_app_on() ) {
 
 		$hide_class = ( $disable_header !== false ) ? "hide" : "";
 
