@@ -27,9 +27,10 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'twentyseventeen' ); ?></a>
 
 	<?php
-	$disable_header = get_theme_mod( 'sed_disable_header' ); 
 
-	if( $disable_header === false || site_editor_app_on() ) {
+	$disable_header = (bool)get_theme_mod( 'sed_disable_header' ); 
+
+	if( !$disable_header ) {
 
 		$hide_class = ( $disable_header !== false ) ? "hide" : "";
 

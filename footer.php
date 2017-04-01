@@ -17,7 +17,7 @@
 		</div><!-- #content -->
 
 		<?php
-		$disable_footer = get_theme_mod( 'sed_disable_footer' );
+		$disable_footer = (bool)get_theme_mod( 'sed_disable_footer' );
 
 		if( $disable_footer === false || site_editor_app_on() ) {
 
